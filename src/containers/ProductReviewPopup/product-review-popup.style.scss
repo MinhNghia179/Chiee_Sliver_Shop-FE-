@@ -1,0 +1,16 @@
+.modal_product_review{
+  .content{
+    .img_product{
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    }
+    .product_name{
+      text-decoration-line: none;
+      color: black;
+      &:hover{
+        color: var(--mainColor);
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.form_add_comment{
+  input{
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-color: gainsboro;
+    padding: 15px;
+    border-radius: 8px;
+    &:focus{
+      outline-color: var(--mainColor);
+    }
+  }
+}

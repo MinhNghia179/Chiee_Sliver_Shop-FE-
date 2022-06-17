@@ -1,0 +1,122 @@
+@import "assets/styles/_mixin.scss";
+
+.account_menu {
+  ul {
+    list-style-type: none;
+    li {
+      margin-bottom: 15px;
+      border-bottom: 1px solid rgb(223, 223, 223);
+      padding-bottom: 15px;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        color: var(--mainColor);
+        a {
+          color: var(--mainColor);
+        }
+      }
+    }
+    .active {
+      color: var(--mainColor);
+      a {
+        color: var(--mainColor);
+      }
+    }
+  }
+}
+
+.account_content {
+  .btn_choose_file {
+    color: var(--mainColor);
+    border-radius: 8px;
+    border: 1px solid var(--mainColor) !important;
+    padding: 7px 15px;
+    margin-top: 20px;
+  }
+  .btn_save_info {
+    color: var(--mainColor);
+    border-color: var(--mainColor) !important;
+  }
+  .order_List {
+    margin: 10px 0;
+    .order_item {
+      &:hover {
+        border: 1px solid var(--mainColor);
+      }
+      .status {
+        color: #26aa99;
+        font-weight: bold;
+      }
+      .total_price {
+        font-size: 1.1rem;
+        span {
+          color: var(--mainColor);
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.order_item {
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 8px;
+  background-color: rgba(233, 233, 233, 0.144);
+  padding: 10px;
+  margin: 15px 0;
+  &_product {
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .product_info {
+      margin-left: 10px;
+
+      &_name {
+        text-decoration-line: none;
+        color: black;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+      &_type {
+        color: gray;
+      }
+      &_price {
+        color: var(--mainColor);
+        font-size: 18px;
+        span {
+          color: gray;
+          text-decoration: line-through;
+          margin-left: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+    &:hover{
+      .product_info_name{
+        color: var(--mainColor);
+      }
+    }
+  }
+  .btn_action{
+    @include small-down{
+      width: 100%;
+      button{
+        width: 100%;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

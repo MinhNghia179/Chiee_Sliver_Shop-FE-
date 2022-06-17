@@ -1,0 +1,13 @@
+.blog_item_list {
+  cursor: pointer;
+  img {
+    width: -webkit-fill-available;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+      color:var(--mainColor);
+    }
+  }
+}

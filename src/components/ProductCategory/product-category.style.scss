@@ -1,0 +1,22 @@
+.product_category {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      padding: 10px 0;
+      a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: gray;
+        &:hover {
+          color: var(--menuHover);
+        }
+      }
+    }
+    .active {
+      a {
+        color: var(--mainColor);
+      }
+    }
+  }
+}

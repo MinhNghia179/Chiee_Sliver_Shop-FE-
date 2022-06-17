@@ -1,0 +1,11 @@
+.breadcrumbs_contain {
+  background-color: white;
+  border-radius: 0.5rem !important;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  .current_page {
+    color: gray;
+  }
+}

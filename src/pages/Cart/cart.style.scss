@@ -1,0 +1,75 @@
+@import "assets/styles/_mixin.scss";
+
+.cart {
+  &_content {
+    .text_price{
+      text-align: right;
+      @include small-down{
+        text-align: center;
+      }
+    }
+    .cart_item{
+      border-radius: 8px;
+      //padding: 10px;
+      .btn_change_amount{
+        border: 1px solid var(--mainColor);
+        height: 32px;
+        .text_amount{
+          width: 50px;
+          text-align: center;
+          border-left: 1px solid var(--mainColor);
+          border-right: 1px solid var(--mainColor);
+        }
+      }
+      &_info{
+        @include small-down{
+          flex-direction: column;
+        }
+      }
+      img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-right: 25px;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+        
+      }
+      &:hover{
+        border-color: var(--mainColor);
+        a{
+          color: var(--mainColor);
+        }
+      }
+      &_footer{
+        padding: 35px 25px !important;
+        position: sticky;
+        bottom: 0;
+        .btn_delete_cart{
+          border-color: var(--mainColor);
+        }
+        .price{
+          margin-right: 20px;
+          span{
+            color: var(--mainColor);
+          }
+        }
+        @include medium-down{
+          bottom: 70px;
+          .item_price{
+            justify-content: start !important;
+          }
+          .btn_checkout{
+            width: 100%;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+  }
+}

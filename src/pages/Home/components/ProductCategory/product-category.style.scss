@@ -1,0 +1,29 @@
+.product-category {
+  .list_category{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    .item_category {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 110px;
+      margin: 10px;
+      margin-right: 20px;
+      cursor:pointer;
+      &:hover{
+        color: var(--mainColor);
+      }
+      &:last-child{
+        margin-right: 10px;
+      }
+      img{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  
+  }
+}

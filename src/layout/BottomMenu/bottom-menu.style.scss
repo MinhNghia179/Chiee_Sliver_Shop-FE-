@@ -1,0 +1,49 @@
+@import "assets/styles/_mixin.scss";
+
+.bottom_menu{
+  display: none ;
+  @include medium-down {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-top-color: var(--color-main);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: sticky;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: normal;
+    z-index: 1;
+    &_item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+    }
+    .active{
+      color: var(--color-main);
+      font-weight: bold;
+    }
+  }
+}
+.product_category_drawer{
+  padding: 10px 20px;
+  &_header{
+    position: relative;
+    h5{
+      padding: 0 30px;
+    }
+    button{
+      position: absolute;
+      right: -15px;
+      border: none;
+      background-color: white;
+      top: 0;
+    }
+    
+  }
+}

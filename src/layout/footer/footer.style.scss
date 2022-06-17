@@ -1,0 +1,46 @@
+@import "assets/styles/_mixin.scss";
+
+.footer{
+  //color: #898989;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: var(--color-main);
+  &_main{
+    background: white;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    .footer_menu{
+      display: flex;
+      flex-direction: column;
+      a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+          color: var(--color-main);
+        }
+      }
+    }
+    .footer_social{
+      display: flex;
+      img{
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+    .footer_payment{
+      display: flex;
+      img{
+        margin-right: 10px;
+      }
+    }
+  }
+  &_bottom{
+    background-color: white;
+    padding: 18px 0;
+    font-size: 13px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: gray;
+    color: #898989;
+  }
+}

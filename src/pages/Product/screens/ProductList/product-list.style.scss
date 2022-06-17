@@ -1,0 +1,61 @@
+@import "assets/styles/_mixin.scss";
+
+.product_list{
+  &_content{
+    .left_sidebar{
+      //width: 300px;
+      padding-right: 20px;
+      width: -webkit-fill-available;
+      min-width: 300px;
+      max-width: 300px;
+      @include medium-down {
+        display: none !important;
+      }
+      
+    }
+    .list_product{
+      
+    }
+  }
+}
+
+.btn_drawer{
+  display: none;
+  .draw_filter{
+    display: none;
+  }
+  @include medium-down {
+    display: block !important;
+    .draw_filter{
+      display: block !important;
+    }
+  }
+}
+
+.btn_filter{
+  position: fixed;
+  top: 20vh;
+  right: 10px;
+  z-index: 100;
+  button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: var(--mainColor);
+    border:none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 12px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.btn_close_filter_drawer{
+  position: absolute !important;
+  background-color: var(--mainColor) !important;
+  color: white !important;
+  right: 15px;
+  top: 8px;
+}

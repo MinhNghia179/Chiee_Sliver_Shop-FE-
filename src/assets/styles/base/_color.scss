@@ -1,0 +1,41 @@
+:root {
+  --color-main: #f53d2d;
+  --menuWidth: 100%;
+  --leftColBackground: #fff;
+  --lightLeftColBackground: #2d343a;
+  --darkLeftColBackground: #22272b;
+  --mainColor: #f53d2d;
+  --mainColor2: #ff6633;
+  --menuHover: #ffc107;
+  --accentColor1: #929292;
+  --accentColor2: #d80000;
+  --textColor: #4c4c4c;
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --spacing: 0.1rem;
+  --transition: all 0.3s linear;
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-1: hsl(209, 61%, 16%);
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: white;
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.color-third {
+  color: var(--color-gray-3);
+}
+.color-gray-4 {
+  color: var(--color-gray-4);
+}
+.color-blue {
+  color: var(--color-blue) !important;
+}
+
+#root {
+  background-color: #f4f4f4;
+}

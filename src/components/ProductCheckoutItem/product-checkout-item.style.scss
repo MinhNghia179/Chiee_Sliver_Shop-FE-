@@ -1,0 +1,27 @@
+.checkout_products {
+  &_item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    &_info {
+      margin-left: 10px;
+      a {
+        text-decoration-line: none;
+        color: black;
+        font-size: 1rem !important;
+        &:hover{
+          color:var(--mainColor)
+        }
+      }
+      .price_discount{
+        color: gray !important;
+        text-decoration: line-through;
+        font-size: 0.9rem !important;
+      }
+    }
+  }
+}
